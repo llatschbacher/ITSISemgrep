@@ -65,12 +65,23 @@ Diese Regel erkennt die Sicherheitslücke von hardcodierten Passwörtern.
 
 ```yml
 rules:
-- id: hardcodierte-passwoerter
-  pattern: |
-    String $PASSWORD = "...";
-  message: "Vermeide hardcodierte Passwörter im Code."
+- id: hardcodierte-variablen-in-login-methode
+  patterns:
+    - pattern: |
+         public $RETURNTYPE login(...) {
+            ...
+            $VARIABLE = $VALUE;
+            ...
+          }
+  message: "Vermeide die Verwendung hartkodierter Variablen innerhalb von Login-Methoden."
   languages: [java]
   severity: ERROR
+
+
+
+
+
+
 ```
 
 Ausführen:
