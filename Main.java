@@ -6,13 +6,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Rechtschreibtrainer trainer = new Rechtschreibtrainer();
         trainer.runTraining();
-        System.exit(x);
     }
     public boolean login(String txt) {
-      return true;
+        String password = "sdkjjksdkjg";
     }
-    public boolean config(char c) {
-      x = new FileInputStream("fsdfsd");
-      String $PASSWORD = "passwort";
-      return false;
 }
