@@ -39,6 +39,10 @@ rules:
   severity: ERROR
 ```
 
+Ausführen:
+
+![gefaehrlicheKonstrukteAusfuehren](images/gefaehrlicheKonstrukte.png)
+
 ## Rule 3 - Erkennung von authentifizierungs Routinen
 
 Diese Regel erkennt Authentifizierungs Routinen und zeigt diese an, damit man die Sicherheit derer überprüfen kann.
@@ -68,6 +72,10 @@ rules:
   languages: [java]
   severity: ERROR
 ```
+
+Ausführen:
+
+![SicherheitslueckenAusfuehren](images/sicherheitsluecken.png)
 
 ## Rule 5 - unsichere Konfigurationsoptionen
 
