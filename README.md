@@ -4,6 +4,8 @@
 
 ## Rule 1 - Vorhandensein von Kommentaren bei public Methoden
 
+Diese Regel überprüft ob über öffentlichen Methoden ein Kommentar ist, um diese zu erklären. Falls dies nicht der Fall ist, wird eine Warnung ausgegben.
+
 ```yml
 rules:
 - id: kommentare-bei-oeffentlichen-methoden
@@ -26,6 +28,8 @@ rules:
 
 ## Rule 2 - Vermeidung von gefaehrlichen Konstrukten
 
+Diese Regel überprüft ob ein gefährliches Konstrukt verwendet wird. In dem Fall haben wir System.exit() gewählt, da diese Methode direkt zum Programmabsturz führt, was nicht unbedingt gewollt ist ohne das gespeichert ist.
+
 ```yml
 rules:
 - id: vermeidung-von-system-exit
@@ -36,6 +40,8 @@ rules:
 ```
 
 ## Rule 3 - Erkennung von authentifizierungs Routinen
+
+Diese Regel erkennt Authentifizierungs Routinen und zeigt diese an, damit man die Sicherheit derer überprüfen kann.
 
 ```yml
 rules:
@@ -51,6 +57,8 @@ rules:
 
 ## Rule 4 - Erkennung von Sicherheitsluecken
 
+Diese Regel erkennt die Sicherheitslücke von hardcodierten Passwörtern.
+
 ```yml
 rules:
 - id: hardcodierte-passwoerter
@@ -63,6 +71,8 @@ rules:
 
 ## Rule 5 - unsichere Konfigurationsoptionen
 
+Diese Regel erkennt nicht sicher konfigurierten File Zugriff.
+
 ```yml
 rules:
 - id: unsichere-konfiguration
@@ -74,6 +84,8 @@ rules:
 ```
 
 ## Rule 6 - unsichere Dateipfade
+
+Diese Regel erkennt unsichere Zugriffe auf sicherheitsrelevante Dateipfade, wie etc/passwd.
 
 ```yml
 - id: java-unsafe-file-paths
