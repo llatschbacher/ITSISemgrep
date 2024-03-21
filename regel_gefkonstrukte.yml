@@ -1,0 +1,6 @@
+rules:
+- id: vermeidung-von-system-exit
+  pattern: System.exit($X);
+  message: "Vermeide die Verwendung von System.exit(), um die Applikation nicht abrupt zu beenden."
+  languages: [java]
+  severity: ERROR

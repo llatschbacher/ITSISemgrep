@@ -1,0 +1,8 @@
+- id: java-unsafe-file-paths
+  patterns:
+    - pattern: |
+        $Path = $any;
+        $Pattern.matches(".*/etc/passwd", $Path);
+      message: "Unsicherer Dateipfad gefunden: möglicher Zugriff auf Passwortdateien."
+  languages:
+    - java

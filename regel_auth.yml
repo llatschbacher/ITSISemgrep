@@ -1,0 +1,9 @@
+rules:
+- id: authentifizierungs-routinen
+  pattern: |
+    public $RETURNTYPE login($PARAMS) {
+      ...
+    }
+  message: "Überprüfe die Sicherheit der Authentifizierungsroutine."
+  languages: [java]
+  severity: INFO

@@ -1,0 +1,7 @@
+rules:
+- id: unsichere-konfiguration
+  pattern: |
+    $X = new FileInputStream("$FILE");
+  message: "Stelle sicher, dass der Zugriff auf Dateien sicher konfiguriert ist."
+  languages: [java]
+  severity: WARNING

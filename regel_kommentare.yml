@@ -1,0 +1,17 @@
+rules:
+- id: kommentare-bei-oeffentlichen-methoden
+  patterns:
+    - pattern: |
+        public $RETURNTYPE $METHOD(...) {
+          ...
+        }
+    - pattern-not: |
+        /**
+         * ...
+         */
+        public $RETURNTYPE $METHOD(...) {
+          ...
+        }
+  message: "Öffentliche Methoden sollten Kommentare haben, die ihre Funktionalität erklären."
+  languages: [java]
+  severity: WARNING

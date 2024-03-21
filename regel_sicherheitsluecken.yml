@@ -1,0 +1,7 @@
+rules:
+- id: hardcodierte-passwoerter
+  pattern: |
+    String $PASSWORD = "...";
+  message: "Vermeide hardcodierte Passwörter im Code."
+  languages: [java]
+  severity: ERROR
